@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+<section>
+<h1>¿Qué es CSS?</h1>
+<p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de 
+un documento escrito en HTML o XML. Permite separar el contenido de un documento (su estructura) 
+de su diseño (colores, fuentes, márgenes, etc.), facilitando la gestión del estilo y la apariencia de las 
+páginas web.</p>
+<h1>¿Cuál es la función principal de CSS?</h1><br>
+<p>La función principal de CSS es controlar la presentación visual de los elementos 
+en una página web. Esto incluye aspectos como el diseño, los colores, las fuentes y el espaciado. 
+CSS permite a los desarrolladores web aplicar estilos de manera consistente 
+en múltiples páginas y adaptar el diseño a diferentes dispositivos.</p>
+<h1>¿Cómo se puede incluir CSS en un documento HTML?</h1>
+<p>Hay tres maneras principales de incluir CSS en un documento HTML:
+
+        <pre>
+        <code>
+        &lt;h1 style="color: blue;"&gt;Hola Mundo &lt;/h1&gt;
+        </code>
+        </pre>
+        <pre>
+            <code>
+            &lt;head&gt; &lt;style="color: blue;"&gt;Hola Mundo &lt;/h1&gt;
+            </code>
+            </pre>
+            <pre>
+                <code>
+                &lt;head&gt;&lt;style&gt;<br>h1 &#123; color:blue &#125;
+                &lt;/style&gt; &lt;/head&gt;
+                </code>
+                </pre>
+</p>
+
+<h1> ¿Qué son los selectores en CSS? </h1>
+<ol>
+    <li>
+        <strong>Selectores de tipo:</strong> Seleccionan todos los elementos de un tipo específico (por ejemplo, <code>p</code> para párrafos).
+    </li>
+    <li>
+        <strong>Selectores de clase:</strong> Seleccionan elementos que tienen una clase específica (por ejemplo, <code>.clase</code>).
+    </li>
+    <li>
+        <strong>Selectores de ID:</strong> Seleccionan un elemento único con un ID específico (por ejemplo, <code>#id</code>).
+    </li>
+    <li>
+        <strong>Selectores de atributo:</strong> Seleccionan elementos con un atributo específico (por ejemplo, <code>[type="text"]</code>).
+    </li>
+</ol>
+<h1>¿Qué son las propiedades y valores en CSS? </h1>
+<p>Las propiedades son características de los elementos HTML que se pueden modificar mediante CSS. 
+Cada propiedad tiene un conjunto de valores posibles que determinan cómo se aplica el estilo. 
+La sintaxis general es:
+<pre>
+<code>
+   selector &#123; propiedad: valor; &#125;
+
+</code>
+</pre>
+</p>
+<h1>¿Cómo se aplica el modelo de caja en CSS?</h1>
+<p>El modelo de caja (box model) es un concepto fundamental en CSS que describe cómo se estructuran los 
+elementos en una página web. 
+Cada elemento se representa como una caja rectangular, que consta de:
+<ol>
+    <li>
+        Contenido: El texto o imágenes dentro del elemento.
+    </li>
+    
+        <li>
+            Padding (relleno): Espacio entre el contenido y el borde de la caja.
+        </li>
+        
+            <li>
+                Border (borde): Línea que rodea el padding y el contenido.
+            </li>
+            
+                <li>
+                    Margin (margen): Espacio exterior que separa el elemento de otros elementos.
+                </li></ol></p>
+<h1> ¿Qué es el "cascading" en CSS? </h1>
+<p>El "cascading" se refiere a la forma en que CSS aplica reglas de estilo a un documento. 
+Cuando hay múltiples reglas que pueden aplicarse a un mismo elemento, 
+el navegador determina cuál utilizar según:
+<ol>
+    <li>
+        Especificidad: Cuanto más específico sea el selector, mayor prioridad tendrá.
+    </li>
+    
+        <li>
+            Orden: Si dos reglas tienen la misma especificidad, se aplicará la última definida.
+        </li>
+        
+            <li>
+                Importancia: Las reglas con !important tienen prioridad sobre las demás.
+            </li>
+        </ol>
+            
+
+</p>
+<h1>¿Qué son las media queries? </h1>
+<p>Las media queries son una característica de CSS que permite aplicar estilos específicos basados en ciertas 
+condiciones, como el tamaño de la pantalla o la orientación del dispositivo. 
+Esto es clave para el diseño responsivo. Un ejemplo básico es:
+<pre>
+<code>
+@media(max-width: 600px) <br>body  &#123; background-color: lighblue; &#125;&#125;
+
+</code>
+</pre>
+
+
+</p>
+<h1>¿Cuáles son algunos estilos comunes que se pueden aplicar? </h1>
+<p>Algunos estilos comunes en CSS incluyen:
+    <ol>
+        <li>
+            Color y fondo: color, background-color, background-image
+        </li>
+        
+            <li>
+                Tipografía: font-family, font-size, font-weight, text-align
+            </li>
+            
+                <li>
+                    Espaciado: margin, padding
+                </li>
+                <li>
+                    <li>
+                        Dimensiones: width, height, max-width, max-height
+                    </li>
+                    <li>
+                        Bordes: border, border-radius
+                    </li>
+                </li>
+                Display: display, position, float
+                </li>
+            </ol>
+</p>
+<h1> ¿Cómo se puede usar CSS para crear un diseño responsivo? </h1>
+<p>Para crear un diseño responsivo, puedes utilizar:
+    <ol>
+        <li>
+            Media Queries: Para aplicar estilos diferentes según el tamaño de la pantalla.
+        </li>
+        
+            <li>
+                Unidades relativas: Usar unidades como %, em, y rem en lugar de unidades 
+                fijas (px) para que los elementos se 
+                ajusten según el tamaño del contenedor.</li>
+            
+                <li>
+                Flexbox y Grid: Utilizar modelos de diseño como Flexbox y CSS Grid 
+                para crear estructuras que se adapten a diferentes tamaños de pantalla.
+                </li>
+              <li>
+                    Imágenes fluidas: Hacer que las imágenes sean escalables usando max-width: 100%; 
+                    para que no excedan el ancho de su contenedor.
+                    </li>
+                </ol>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1 style="text-align: center;">Presentacion basica y algo de CSS</h1>
+<img src="https://th.bing.com/th/id/R.580610a6ac22569ece3fd1935a6b4860?rik=4BnvdtuFT%2fDIjw&riu=http%3a%2f%2fimages7.memedroid.com%2fimages%2fUPLOADED686%2f5e010cdc92bd3.jpeg&ehk=a%2fZIg64cRQPLOI%2faAdEU8OxcNii0BcNh%2bmXt54gSvMM%3d&risl=&pid=ImgRaw&r=0">
+
+<p class="nombre">Ni Nombre es Darien Starling</p>
+<p class="tiempo">Mi Pasatiempo es Jugar en el play y la pc</p>
+<p class="trabajo">Trabajo como Almacenista</p>
+<p class="gustos">Me Gusta ver animes</p>
+<a href="https://th.bing.com/th/id/OIP.CTCiqOn4iDk8J8SQRkVB3wAAAA?rs=1&pid=ImgDetMain">
+<button>¿Quieres saber mas?</button>
+</a>
+<style>
+
+
+body{background-color: cadetblue;
+    color: #523535;
+
+}
+.nombre{ color: rgb(4, 4, 5);
+
+}
+.tiempo{ color: rgb(88, 0, 139);
+
+}.trabajo{ color: rgb(19, 116, 129);
+
+}.gustos{ color: rgb(65, 0, 139);
+
+}
+img{width: 400px;
+height: 400px;
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+</body>
+</html>
