@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: cyan;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > ul > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+}
+
+.menu > ul > li:hover > a {
+    transform: scale(1.1);
+ 
+}
+
+
+
+
+
+
+.principal{background-color: rgb(226, 241, 241);
+    color: #523535;
+
+}
+.nombre{ color: rgb(4, 4, 5);
+text-align: center;
+
+
+}
+.tiempo{ color: rgb(88, 0, 139);
+    text-align: center;
+}.trabajo{ color: rgb(19, 116, 129);
+    text-align: center;
+}.gustos{ color: rgb(65, 0, 139);
+    text-align: center;
+}
+img{width: 400px;
+height: 400px;
+
+
+}
+.css{
+    background-color: rgb(209, 236, 236);
+color: black;
+
+}
+
